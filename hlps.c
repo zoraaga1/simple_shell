@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * the_int_to_string1 - intsialaze intger
- * @numbrX: num of inger
- * Return: a character
+ * the_int_to_string1 - intsialase intiger
+ * @numbrX: num of intigers in function
+ * Return: a characters
  */
 char *the_int_to_string1(int numbrX)
 {
@@ -50,9 +50,9 @@ char *the_int_to_string1(int numbrX)
 }
 
 /**
- * the_digits1- digiralyy
- * @y: digitalyy
- * Return: booling
+ * the_digits1- digi
+ * @y: digita
+ * Return: boolings
  */
 int the_digits1(int y)
 {

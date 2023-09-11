@@ -1,12 +1,13 @@
 #include "shell.h"
 
 /**
- * free_word1 - list of wrding.
- * @wrding: Pointer of strings.
- * @numberW: wrding in the arrays.
- * frees each individual string in the array using the
+ * free_word1 - Frees a list of words.
+ * @wrding: Pointer to the strings.
+ * @numberW: Number of words in the array.
+ * Frees each individual string in the array using the
  * free() function and finally frees the array itself using free().
  */
+
 void free_word1(char **wrding, int numberW)
 {
 	int x;

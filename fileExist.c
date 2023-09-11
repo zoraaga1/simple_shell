@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * file_exit1 - if a file exists
- * @pathing: the file to check
- * Return: 1 if the file exists, 0 otherwise
+ * file_exit1 - if the file exists.
+ * @pathing: a file to check.
+ * Return: 1 if the file exist, otherwise 0.
  */
 int file_exit1(const char *pathing)
 {

@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _atoy1 - implement of built in atoy
- * @strr: character
- * Return: int
+ * _atoy1 - implements of builts.
+ * @strr: a character.
+ * Return: intiger.
 */
 
 int _atoy1(const char *strr)

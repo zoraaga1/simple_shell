@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * my_path1 - full path of a com
- * @commanding: the com
- * Return: ful dir path or NUL
+ * my_path1 - full path of a commands.
+ * @commanding: the commands.
+ * Return: ful dir path or null return
 */
 
 char *my_path1(const char *commanding)

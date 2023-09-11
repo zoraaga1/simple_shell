@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _dup_str1 - character dest.
- * @strr: arr of chracter.
- * Return: none lenthing.
+ * _dup_str1 - character destructions.
+ * @strr: arrey of chracters.
+ * Return: none lenthings.
  */
 char *_dup_str1(const char *strr)
 {

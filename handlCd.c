@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * the_cd_comend1 - han cd com
- * @wordArrat: to ar of wor
- * Return: void
+ * the_cd_comend1 - han cd comand
+ * @wordArrat: to ar of word
+ * Return: voids.
 */
 
 void the_cd_comend1(char **wordArrat)

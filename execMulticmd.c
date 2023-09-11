@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * the_exe_cmd1 - Execute  by semicolons
- * @uInput: nput string containing the commands
- * @shell: program names
- * @contre: count monad
- * Return: error code
+ * the_exe_cmd1 - Execute  by the semi colone
+ * @uInput: inputs string containing the commands
+ * @shell: programme name
+ * @contre: counts
+ * Return: errors codes.
  */
 int the_exe_cmd1(char *uInput, char *shell, int contre)
 {

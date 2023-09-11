@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _execute_bn1 - taking /bin/ls
- * @wordArray: arr  commands
- * Return: void
+ * _execute_bn1 - execute this /bin/ls
+ * @wordArray: array to commands
+ * Return: void return
 */
 void _execute_bn1(char **wordArray)
 {
@@ -29,12 +29,12 @@ void _execute_bn1(char **wordArray)
 /**
  * _execute_fork1 - executes  fork-exec
  * @wordArray: arr  commands
- * @uInput: user prompt
- * @shellN: name program
- * @cntrr: monad counter
- * @n: ------------------
- * @uInput: _______________
- * Return: code erro
+ * @uInput: user prompts
+ * @shellN: name programme
+ * @cntrr: monad counters
+ * @n: integer variable
+ * @uInput: variable
+ * Return: code errors
 */
 
 int _execute_fork1(char **wordArray, char *uInput,

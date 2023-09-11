@@ -1,13 +1,13 @@
 #include "shell.h"
 
 /**
- * the_handle_cmd1 - red off env, setting, unsseting.
- * @wordArr: comand provided.
- * @sh_name: titeling.
+ * the_handle_cmd1 - red off env, setting, unsseting.s
+ * @wordArr: comand provid.
+ * @sh_name: titel.
  * @cnt: cmonad counting.
- * @n: random name.
- * @uInput: user input spacce
- * Return: 1 in case cmd is found || zero.
+ * @n: random names.
+ * @uInput: user input space
+ * Return: 1 in case cmd is found or zero.
 */
 
 int the_handle_cmd1(char **wordArr, char *uInput,

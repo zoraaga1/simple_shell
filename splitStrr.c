@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * split_str1 - splits a string into an wrdsN array
- * @stringing: str -> be splited
+ * split_str1 - splits a string into an wrdsN arrays
+ * @stringing: str -> be splited.
  * @sprt: delimetering
- * @wrdsN: wrdXs num in the str
- * Return: string array || NULL
+ * @wrdsN: wrdXs num in the string
+ * Return: string arr or NULL.
 */
 
 char **split_str1(char *stringing, const char *sprt, int *wrdsN)

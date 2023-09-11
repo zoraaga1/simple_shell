@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * the_handle_exits1 -  exit built-in command.
- * @wordArray: commanding
+ * the_handle_exits1 -  exit builtin command.
+ * @wordArray: the commanding.
  * @uInput: input user.
- * @shellN: program nome
- * @contre: contre commanders
- * @nX: numbers of commanders
+ * @shellN: program nomes
+ * @contre: contre commands
+ * @nX: numbers of commands
  * Return: void.
  */
 void the_handle_exits1(char **wordArray, char *uInput,

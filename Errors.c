@@ -2,12 +2,12 @@
 
 
 /**
- * the_print_errors - errrorooror
- * @sh: naaaaame
- * @commanding: cmmmmmd
- * @messaging: msssg
- * @contry: monad count
- * Return: void
+ * the_print_errors - errors.
+ * @sh: names.
+ * @commanding: the commanding.
+ * @messaging: the messages.
+ * @contry: counting the variables.
+ * Return: void return.
 */
 void the_print_errors(char *contry, char *sh, char *commanding, char *messaging)
 {
@@ -24,11 +24,11 @@ void the_print_errors(char *contry, char *sh, char *commanding, char *messaging)
 }
 
 /**
- * the_exer1- errrorrooror
- * @shell: naaaame
- * @wordArray: akalal
- * @contr: monad count
- * Return: void
+ * the_exer1- error message
+ * @shell: name of simple shell
+ * @wordArray: pointer to pointer
+ * @contr: char pointer
+ * Return: void return
 */
 void the_exer1(char **wordArray, int contr, char *shell)
 {

@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * the_read_input1  - rea inp
- * @reading: to cha
- * Return: 1 if rea else 0
+ * the_read_input1  - read the inputs
+ * @reading: to read 
+ * Return: 1 if read else 0
 */
 
 int the_read_input1(char *reading)
@@ -22,10 +22,10 @@ int the_read_input1(char *reading)
 }
 
 /**
- * the_re_allocation1  - sam as C realoc
+ * the_re_allocation1  - sams as C realocation of the process
  * @VoidPointer: to olds ones
- * @szz: cuse sizin
- * Return: void
+ * @szz: cuse sizines
+ * Return: voids
 */
 
 void *the_re_allocation1(void *VoidPointer, size_t szz)
@@ -52,12 +52,12 @@ void *the_re_allocation1(void *VoidPointer, size_t szz)
 }
 
 /**
- * the_buf_upto1  - up the stor bff
- * @buffing: point
- * @sezing: the si of buf
+ * the_buf_upto1  - up the stors buffers
+ * @buffing: points
+ * @sezing: the si of bufers
  * @bff: stor
- * @unicId: cur posi of bf
- * Return: void
+ * @unicId: cur posi of bfers
+ * Return: voids
 */
 void the_buf_upto1(char **buffing, size_t *sezing, char *bff, size_t unicId)
 {

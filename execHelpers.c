@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * exe_cmd_withexecve1 - tqsqddsd it
- * @commnde: the sdsdsldls execute
- * @wordArray: arr qsdlkqsd commands
- * Return: void
+ * exe_cmd_withexecve1 - the function command
+ * @commnde: the execute command
+ * @wordArray: array commands.
+ * Return: void return
 */
 
 void exe_cmd_withexecve1(char *commnde, char **wordArray)
@@ -18,10 +18,10 @@ void exe_cmd_withexecve1(char *commnde, char **wordArray)
 
 
 /**
- * wait_kid_proce1 - wait child sqdjhqs to end
- * @pidding: process qsd
- * @stt: stt of pqsdnqsdqsd
- * Return: void
+ * wait_kid_proce1 - wait child  to end of the process
+ * @pidding: the process 
+ * @stt: stt of the process
+ * Return: void return 
 */
 
 void wait_kid_proce1(pid_t pidding, int *stt)
@@ -33,9 +33,9 @@ void wait_kid_proce1(pid_t pidding, int *stt)
 	}
 }
 /**
- * the_valid_word1 - check if workd sfsdfsf
- * @string: word sdfsdfsdf
- * Return: 1 if valid 0 no
+ * the_valid_word1 - check if works in the process
+ * @string: word strings
+ * Return: 1 if valid 0 none valid
 */
 int the_valid_word1(char *string)
 {

@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * the_handle_signs1 - redding of signaling
- * @sigging: signaling
- * Return: emty function
+ * the_handle_signs1 - redding of signalings
+ * @sigging: signalings
+ * Return: emty functionss
  */
 void the_handle_signs1(int sigging)
 {
@@ -14,9 +14,9 @@ void the_handle_signs1(int sigging)
 
 /**
  * main - starting point of shell.
- *@argumnetC: argumnetC num
- * @argumnetV: args
- * Return: exiting code.
+ *@argumnetC: argumnet numbre
+ * @argumnetV: arg
+ * Return: exiting codes.
  */
 
 int main(int argumnetC, char **argumnetV)

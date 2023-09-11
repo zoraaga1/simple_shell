@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * _direct_pat - directory pathing and a command
- * @pathing: The dire path
- * @commanding: The comm name
+ * _direct_pat - directory pathing and a commandq
+ * @pathing: The dire paths
+ * @commanding: The commandung names
  *
- * Return: strwith the conca pathing and com nam
+ * Return: str with the concatinations of pathing and com names
  */
 char *_direct_pat(const char *pathing, const char *commanding)
 {

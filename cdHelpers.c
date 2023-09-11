@@ -1,12 +1,13 @@
 #include "shell.h"
 
 /**
- * the_env_vars1 - an environment variable to print.
- * @envChar: environment variable the name.
- * @envPtr: variables array envirenment to print.
+ * the_env_vars1 - A function to print an environment variable.
+ * @envChar: The name of the environment variable.
+ * @envPtr: The array of environment variables to print.
  *
- * Return: variable envirenement value.
+ * Return: The value of the environment variable.
  */
+
 char *the_env_vars1(const char *envChar, char **envPtr)
 {
 	char **envPointer;
@@ -23,8 +24,8 @@ char *the_env_vars1(const char *envChar, char **envPtr)
 }
 
 /**
- * the_error1 - message error print.
- * @message: message to print error.
+ * the_error1 - the message error print.
+ * @message: the message to print errors.
  */
 void the_error1(const char *message)
 {
@@ -32,8 +33,8 @@ void the_error1(const char *message)
 }
 
 /**
- * the_getdir1 - the directory point get change to.
- * @pathing: path passed to initials cd.
+ * the_getdir1 - directory points get change to.
+ * @pathing: path passed to initials change directory.
  *
  * Return: the directory point get change to.
  */
@@ -48,9 +49,9 @@ char *the_getdir1(const char *pathing)
 }
 
 /**
- * the_handle_cwd1 - working directory Pointe to.
+ * the_handle_cwd1 - The working directory Pointe to.
  *
- * Return: directory pointer cureent working.
+ * Return: The directory pointer cureent working.
  */
 char *the_handle_cwd1()
 {
@@ -63,8 +64,8 @@ char *the_handle_cwd1()
 }
 
 /**
- * the_swit_currdir1 - Changes the directory current working.
- * @drtrPointer: The directory poit to change to.
+ * the_swit_currdir1 - Change the directory currents working.
+ * @drtrPointer: The directory ponits to change to.
  */
 void the_swit_currdir1(const char *drtrPointer)
 {

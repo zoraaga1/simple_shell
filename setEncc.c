@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * the_env_set1 - Setting environment value variable.
+ * the_env_set1 - Setting environment value variables.
  * @envN: env var naming.
- * @nvvl: val to set envN var to.
- * @envOver: flag
- * Return: 0 on case success, other -1.
+ * @nvvl: val to set envN var too.
+ * @envOver: flags
+ * Return: 0 on case of success, otherwise -1.
  */
 int the_env_set1(const char *envN, const char *nvvl,
 			int envOver)

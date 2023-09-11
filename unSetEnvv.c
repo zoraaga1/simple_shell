@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * the_unsetenvs1 - red off variable of environment.
- * @envvN: envN naming  to unseting.
+ * the_unsetenvs1 - red off variables of environment.
+ * @envvN: envvN naming  to unseting.
  * Return: 0 on case success, other -1.
  */
 int the_unsetenvs1(const char *envvN)

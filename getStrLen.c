@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- *  lenstr_1 - handle strringX leng
- * @strringX: the strringX
- * Return: leng
+ *  lenstr_1 - handle strringx lengs
+ * @strringX: the strring.
+ * Return: leng. 
 */
 
 size_t  lenstr_1(const char *strringX)

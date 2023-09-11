@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * the_get_line1 - to custgetli
- * @str: a str poin
- * @szzStr: def as 1024
- * @reading: the fille be read
- * Return: writ li leng
+ * the_get_line1 - to custumise get lines
+ * @str: a str points
+ * @szzStr: definition as 1024
+ * @reading: the filles be read
+ * Return: write line leng in return.
 */
 
 ssize_t the_get_line1(char **str, size_t *szzStr,

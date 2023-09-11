@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * input_read1 - std reding function probts
- * starting on the mygetline() function, returning ponter
+ * input_read1 - std reding functions probts
+ * starting on the mygetline() function, returnings pionters
  * string input.
- * Return:from string input to pointer, || NULL || err || empty line.
+ * Return:from string input to pointer, || NULL or err || empty lin.
  */
 char *input_read1()
 {

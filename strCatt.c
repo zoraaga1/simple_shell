@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * cat_string1 - containes character
- * @dess: desting character
- * @sourssing: character store
+ * cat_string1 - containes characters
+ * @dess: desting characters
+ * @sourssing: character stores
  * Return: character routing
  */
 char *cat_string1(char *dess, const char *sourssing)

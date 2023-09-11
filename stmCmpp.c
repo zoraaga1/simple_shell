@@ -1,11 +1,11 @@
 #include <stddef.h>
 /**
- * cmp_str1 - bytes tht benn given by string.
- * @sttOne: character array stt.
+ * cmp_str1 - bytes tht benn given by strings.
+ * @sttOne: character array string.
  * @sttTwo: chracter string number two.
- * @nbr: max of bytes test.
+ * @nbr: max of bytes tests.
  *
- * Return: conditionaly sttOne or stttwo.
+ * Return: conditionaly sttOne or stt two.
  */
 int cmp_str1(const char *sttOne, const char *sttTwo, size_t nbr)
 {
