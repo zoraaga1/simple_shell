@@ -2,24 +2,24 @@
 
 /**
  * the_memry_copy1 - coping likings
- * @destX: destunations.
- * @resur: resursings
- * @bytNumber: numburings
+ * @dest_ptr: destunations.
+ * @res_ptr: res_ptrsings
+ * @n_bytes: numburings
  * Return: an empty function.
 */
-void *the_memry_copy1(void *destX, const void *resur,
-size_t bytNumber)
+void *the_memry_copy1(void *dest_ptr, const void *res_ptr,
+size_t n_bytes)
 {
-	unsigned char *dss = destX;
-	const unsigned char *crr = resur;
+	unsigned char *dss = dest_ptr;
+	const unsigned char *crr = res_ptr;
 	size_t idd;
 
-	while (idd < bytNumber)
+	while (idd < n_bytes)
 	{
 		dss[idd] = crr[idd];
 		idd++;
 	}
-	return (destX);
+	return (dest_ptr);
 }
 
 

@@ -1,21 +1,21 @@
 #include <stddef.h>
 /**
  * cmp_str1 - bytes tht benn given by strings.
- * @sttOne: character array string.
- * @sttTwo: chracter string number two.
- * @nbr: max of bytes tests.
+ * @first_String: character array string.
+ * @second_String: chracter string number two.
+ * @n_of_max_length: max of bytes tests.
  *
- * Return: conditionaly sttOne or stt two.
+ * Return: conditionaly first_String or second_String.
  */
-int cmp_str1(const char *sttOne, const char *sttTwo, size_t nbr)
+int cmp_str1(const char *first_String, const char *second_String, size_t n_of_max_length)
 {
 	size_t idding = 0;
 
-	while (idding < nbr)
+	while (idding < n_of_max_length)
 	{
-		if (sttOne[idding] != sttTwo[idding])
-			return ((sttOne[idding] < sttTwo[idding]) ? -1 : 1);
-		else if (sttOne[idding] == '\0')
+		if (first_String[idding] != second_String[idding])
+			return ((first_String[idding] < second_String[idding]) ? -1 : 1);
+		else if (first_String[idding] == '\0')
 			return (0);
 		idding++;
 	}

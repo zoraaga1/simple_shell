@@ -1,40 +1,40 @@
 #include "shell.h"
 
 /**
- * split_str1 - splits a string into an wrdsN arrays
- * @stringing: str -> be splited.
- * @sprt: delimetering
- * @wrdsN: wrdXs num in the string
+ * split_str1 - splits a string into an word_counter arrays
+ * @inputed_string: str -> be splited.
+ * @_delim: delimetering
+ * @word_counter: wrdXs num in the string
  * Return: string arr or NULL.
 */
 
-char **split_str1(char *stringing, const char *sprt, int *wrdsN)
+char **split_str1(char *inputed_string, const char *_delim, int *word_counter)
 {
 	char *copping = NULL, *wrdX = NULL, **wArray;
 	int i;
 
-	copping = malloc(sizeof(char) * lenstr_1(stringing) + 1);
+	copping = malloc(sizeof(char) * lenstr_1(inputed_string) + 1);
 	if (copping == NULL)
 	{
 		perror("Allocation Failed !");
 		return (NULL);
 	}
-	copy_str1(copping, stringing);
+	copy_str1(copping, inputed_string);
 
-	*wrdsN = 0;
-	wrdX = strtok(stringing, sprt);
+	*word_counter = 0;
+	wrdX = strtok(inputed_string, _delim);
 	while (wrdX != NULL)
 	{
-		(*wrdsN)++;
-		wrdX = strtok(NULL, sprt);
+		(*word_counter)++;
+		wrdX = strtok(NULL, _delim);
 	}
-	wArray = malloc(sizeof(char *) * (*wrdsN + 1));
+	wArray = malloc(sizeof(char *) * (*word_counter + 1));
 	if (wArray == NULL)
 	{
 		perror("Allocation Failed !");
 		return (NULL);
 	}
-	wrdX = strtok(copping, sprt);
+	wrdX = strtok(copping, _delim);
 	for (i = 0; wrdX != NULL; i++)
 	{
 		wArray[i] = malloc(sizeof(char) * lenstr_1(wrdX) + 1);
@@ -44,7 +44,7 @@ char **split_str1(char *stringing, const char *sprt, int *wrdsN)
 			return (NULL);
 		}
 		copy_str1(wArray[i], wrdX);
-		wrdX = strtok(NULL, sprt);
+		wrdX = strtok(NULL, _delim);
 	}
 
 	wArray[i] = NULL;

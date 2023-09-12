@@ -2,12 +2,12 @@
 
 /**
  * the_handle_signs1 - redding of signalings
- * @sigging: signalings
+ * @n_signal: signalings
  * Return: emty functionss
  */
-void the_handle_signs1(int sigging)
+void the_handle_signs1(int n_signal)
 {
-	(void)sigging;
+	(void)n_signal;
 	write(STDOUT_FILENO, "\n$ ", 4);
 }
 

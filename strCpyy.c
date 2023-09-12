@@ -2,20 +2,26 @@
 
 /**
  * copy_str1 - resoursing
+<<<<<<< Updated upstream
  * @dss: array of characters
  * @sourssing: chracter[0]
  * Return: coping the command
+=======
+ * @str_dest: array of character
+ * @str_source: chracter[0]
+ * Return: coping
+>>>>>>> Stashed changes
 */
 
-char *copy_str1(char *dss, const char *sourssing)
+char *copy_str1(char *str_dest, const char *str_source)
 {
-	char *pointt = dss;
+	char *pointt = str_dest;
 
-	while (*sourssing != '\0')
+	while (*str_source != '\0')
 	{
-		*pointt++ = *sourssing++;
+		*pointt++ = *str_source++;
 	}
 	*pointt = '\0';
-	return (dss);
+	return (str_dest);
 }
 

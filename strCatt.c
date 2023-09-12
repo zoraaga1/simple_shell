@@ -1,17 +1,23 @@
 #include "shell.h"
 
 /**
+<<<<<<< Updated upstream
  * cat_string1 - containes characters
  * @dess: desting characters
  * @sourssing: character stores
+=======
+ * cat_string1 - containes character
+ * @dest_string: desting character
+ * @source_string: character store
+>>>>>>> Stashed changes
  * Return: character routing
  */
-char *cat_string1(char *dess, const char *sourssing)
+char *cat_string1(char *dest_string, const char *source_string)
 {
-	size_t lenthing = lenstr_1(dess);
+	size_t lenthing = lenstr_1(dest_string);
 
-	copy_str1(dess + lenthing, sourssing);
+	copy_str1(dest_string + lenthing, source_string);
 
-	return (dess);
+	return (dest_string);
 }
 

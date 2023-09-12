@@ -2,26 +2,26 @@
 
 /**
  * free_word1 - Frees a list of words.
- * @wrding: Pointer to the strings.
- * @numberW: Number of words in the array.
- * Frees each individual string in the array using the
+ * @arr_ofwords: Pointer to the strings.
+ * @n_ofwords: Number of words in the array.
+ * frees each individual string in the array using the
  * free() function and finally frees the array itself using free().
  */
 
-void free_word1(char **wrding, int numberW)
+void free_word1(char **arr_ofwords, int n_ofwords)
 {
 	int x;
 
-	if (wrding == NULL)
+	if (arr_ofwords == NULL)
 		return;
-	for (x = 0; x < numberW; x++)
+	for (x = 0; x < n_ofwords; x++)
 	{
-		if (wrding[x] != NULL)
+		if (arr_ofwords[x] != NULL)
 		{
-			free(wrding[x]);
-			wrding[x] = NULL;
+			free(arr_ofwords[x]);
+			arr_ofwords[x] = NULL;
 		}
 	}
-	free(wrding);
+	free(arr_ofwords);
 }
 

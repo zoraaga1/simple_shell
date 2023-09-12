@@ -2,11 +2,11 @@
 
 /**
  * my_path1 - full path of a commands.
- * @commanding: the commands.
+ * @cmd_name: the commands.
  * Return: ful dir path or null return
 */
 
-char *my_path1(const char *commanding)
+char *my_path1(const char *cmd_name)
 {
 	char *conping, *drr, *tkn;
 
@@ -19,7 +19,7 @@ char *my_path1(const char *commanding)
 
 	while (tkn != NULL)
 	{
-		drr = _direct_pat(tkn, commanding);
+		drr = _direct_pat(tkn, cmd_name);
 		if (!drr)
 			break;
 
@@ -38,8 +38,8 @@ char *my_path1(const char *commanding)
 
 	free(conping);
 
-	if (file_exit1(commanding) == 1)
-		return ((char *) commanding);
+	if (file_exit1(cmd_name) == 1)
+		return ((char *) cmd_name);
 
 	return (drr);
 }

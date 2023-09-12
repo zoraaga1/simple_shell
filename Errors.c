@@ -3,34 +3,34 @@
 
 /**
  * the_print_errors - errors.
- * @sh: names.
- * @commanding: the commanding.
- * @messaging: the messages.
- * @contry: counting the variables.
+ * @name_ofprogram: names.
+ * @cmd_named: the commanding.
+ * @err_msgouput: the messages.
+ * @err_counter: counting the variables.
  * Return: void return.
 */
-void the_print_errors(char *contry, char *sh, char *commanding, char *messaging)
+void the_print_errors(char *err_counter, char *name_ofprogram, char *cmd_named, char *err_msgouput)
 {
-	write(STDERR_FILENO, sh, lenstr_1(sh));
-	if (commanding != NULL)
+	write(STDERR_FILENO, name_ofprogram, lenstr_1(name_ofprogram));
+	if (cmd_named != NULL)
 	{
 		write(STDERR_FILENO, ": ", 2);
-		write(STDERR_FILENO, contry, lenstr_1(contry));
+		write(STDERR_FILENO, err_counter, lenstr_1(err_counter));
 		write(STDERR_FILENO, ": ", 2);
-		write(STDERR_FILENO, commanding, lenstr_1(commanding));
+		write(STDERR_FILENO, cmd_named, lenstr_1(cmd_named));
 	}
 	write(STDERR_FILENO, ": ", 2);
-	write(STDERR_FILENO, messaging, lenstr_1(messaging));
+	write(STDERR_FILENO, err_msgouput, lenstr_1(err_msgouput));
 }
 
 /**
  * the_exer1- error message
  * @shell: name of simple shell
- * @wordArray: pointer to pointer
+ * @array_ofstr: pointer to pointer
  * @contr: char pointer
  * Return: void return
 */
-void the_exer1(char **wordArray, int contr, char *shell)
+void the_exer1(char **array_ofstr, int contr, char *shell)
 {
 	char *err_code = the_int_to_string1(contr);
 
@@ -38,9 +38,9 @@ void the_exer1(char **wordArray, int contr, char *shell)
 	write(STDOUT_FILENO, ": ", 2);
 	write(STDOUT_FILENO, err_code, lenstr_1(err_code));
 	write(STDOUT_FILENO, ": ", 2);
-	write(STDOUT_FILENO, wordArray[0], lenstr_1(wordArray[0]));
+	write(STDOUT_FILENO, array_ofstr[0], lenstr_1(array_ofstr[0]));
 	write(STDOUT_FILENO, ": Illegal number: ", 19);
-	write(STDOUT_FILENO, wordArray[1], lenstr_1(wordArray[1]));
+	write(STDOUT_FILENO, array_ofstr[1], lenstr_1(array_ofstr[1]));
 	write(STDOUT_FILENO, "\n", 2);
 	free(err_code);
 }

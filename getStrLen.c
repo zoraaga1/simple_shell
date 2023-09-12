@@ -2,18 +2,18 @@
 
 /**
  *  lenstr_1 - handle strringx lengs
- * @strringX: the strring.
+ * @inpt_string: the strring.
  * Return: leng. 
 */
 
-size_t  lenstr_1(const char *strringX)
+size_t lenstr_1(const char *inpt_string)
 {
 	size_t annex = 0;
 
-	while (*strringX != '\0')
+	while (*inpt_string != '\0')
 	{
 		annex++;
-		strringX++;
+		inpt_string++;
 	}
 	return (annex);
 }

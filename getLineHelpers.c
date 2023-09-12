@@ -2,20 +2,20 @@
 
 /**
  * the_read_input1  - read the inputs
- * @reading: to read 
+ * @input_ch: to read 
  * Return: 1 if read else 0
 */
 
-int the_read_input1(char *reading)
+int the_read_input1(char *input_ch)
 {
-	ssize_t strr = read(STDIN_FILENO, reading, 1);
+	ssize_t strr = read(STDIN_FILENO, input_ch, 1);
 
 	if (strr == -1)
 		return (0);
 	if (strr == 0)
 	{
-		if (reading != NULL)
-			reading[0] = '\0';
+		if (input_ch != NULL)
+			input_ch[0] = '\0';
 		return (0);
 	}
 	return (1);
@@ -23,29 +23,29 @@ int the_read_input1(char *reading)
 
 /**
  * the_re_allocation1  - sams as C realocation of the process
- * @VoidPointer: to olds ones
- * @szz: cuse sizines
+ * @old_memo_ptr: to olds ones
+ * @new_memo_size: cuse sizines
  * Return: voids
 */
 
-void *the_re_allocation1(void *VoidPointer, size_t szz)
+void *the_re_allocation1(void *old_memo_ptr, size_t new_memo_size)
 {
 	void *pointer;
 
-	if (szz == 0)
+	if (new_memo_size == 0)
 	{
-		free(VoidPointer);
+		free(old_memo_ptr);
 		return (NULL);
 	}
 
-	pointer = malloc(szz);
+	pointer = malloc(new_memo_size);
 	if (pointer == NULL)
 	return (NULL);
 
-	if (VoidPointer != NULL)
+	if (old_memo_ptr != NULL)
 	{
-		the_memry_copy1(pointer, VoidPointer, szz);
-		free(VoidPointer);
+		the_memry_copy1(pointer, old_memo_ptr, new_memo_size);
+		free(old_memo_ptr);
 	}
 
 	return (pointer);
@@ -53,23 +53,23 @@ void *the_re_allocation1(void *VoidPointer, size_t szz)
 
 /**
  * the_buf_upto1  - up the stors buffers
- * @buffing: points
- * @sezing: the si of bufers
- * @bff: stor
- * @unicId: cur posi of bfers
+ * @buf_: points
+ * @ptr_of_buff: the si of bufers
+ * @new_bufdata: stor
+ * @curr_pos: cur posi of bfers
  * Return: voids
 */
-void the_buf_upto1(char **buffing, size_t *sezing, char *bff, size_t unicId)
+void the_buf_upto1(char **buf_, size_t *ptr_of_buff, char *new_bufdata, size_t curr_pos)
 {
-	if (*buffing == NULL || *sezing < unicId)
+	if (*buf_ == NULL || *ptr_of_buff < curr_pos)
 	{
-		*sezing = (unicId > STORAGE_SIZE) ? unicId : STORAGE_SIZE;
-		*buffing = bff;
+		*ptr_of_buff = (curr_pos > STORAGE_SIZE) ? curr_pos : STORAGE_SIZE;
+		*buf_ = new_bufdata;
 	}
 	else
 	{
-		copy_str1(*buffing, bff);
-		free(bff);
+		copy_str1(*buf_, new_bufdata);
+		free(new_bufdata);
 	}
 }
 

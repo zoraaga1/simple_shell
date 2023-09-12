@@ -2,20 +2,20 @@
 
 /**
  * the_get_line1 - to custumise get lines
- * @str: a str points
- * @szzStr: definition as 1024
- * @reading: the filles be read
+ * @output_String: a output_String points
+ * @output_SZ: definition as 1024
+ * @reading_file: the filles be read
  * Return: write line leng in return.
 */
 
-ssize_t the_get_line1(char **str, size_t *szzStr,
-FILE *reading)
+ssize_t the_get_line1(char **output_String, size_t *output_SZ,
+FILE *reading_file)
 {
 	ssize_t lengthing = 0, starInpt = 0;
 	char *strg = NULL, currentC = ' ';
 
 	if (starInpt == 0)
-		fflush(reading);
+		fflush(reading_file);
 	else
 		return (-1);
 
@@ -37,7 +37,7 @@ FILE *reading)
 	}
 
 	strg[starInpt] = '\0';
-	the_buf_upto1(str, szzStr, strg, starInpt);
+	the_buf_upto1(output_String, output_SZ, strg, starInpt);
 	lengthing = starInpt;
 
 	if (starInpt != 0)

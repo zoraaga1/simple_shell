@@ -2,18 +2,18 @@
 
 /**
  * _dup_str1 - character destructions.
- * @strr: arrey of chracters.
+ * @Strings: arrey of chracters.
  * Return: none lenthings.
  */
-char *_dup_str1(const char *strr)
+char *_dup_str1(const char *Strings)
 {
-	size_t lenthing = lenstr_1(strr), i;
+	size_t lenthing = lenstr_1(Strings), i;
 	char *deepping = malloc(lenthing + 1);
 
 	if (deepping)
 	{
 		for (i = 0; i < lenthing; i++)
-			deepping[i] = strr[i];
+			deepping[i] = Strings[i];
 		deepping[lenthing] = '\0';
 	}
 

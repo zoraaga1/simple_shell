@@ -2,21 +2,21 @@
 
 /**
  * the_int_to_string1 - intsialase intiger
- * @numbrX: num of intigers in function
+ * @n_ofInt: num of intigers in function
  * Return: a characters
  */
-char *the_int_to_string1(int numbrX)
+char *the_int_to_string1(int n_ofInt)
 {
 	int zeroLess = 0, digging = 0, tmppng, i = 0, j = 0;
 	char *strringg;
 
-	if (numbrX < 0)
+	if (n_ofInt < 0)
 	{
 		zeroLess = 1;
-		numbrX *= -1;
+		n_ofInt *= -1;
 		digging++;
 	}
-	tmppng = numbrX;
+	tmppng = n_ofInt;
 	while (tmppng > 0)
 	{
 		digging++;
@@ -24,9 +24,9 @@ char *the_int_to_string1(int numbrX)
 	}
 	strringg = (char *) malloc(sizeof(char) * (digging + 1));
 	do {
-		strringg[i++] = (numbrX % 10) + '0';
-		numbrX /= 10;
-	} while (numbrX);
+		strringg[i++] = (n_ofInt % 10) + '0';
+		n_ofInt /= 10;
+	} while (n_ofInt);
 
 	if (zeroLess)
 	{
@@ -51,12 +51,12 @@ char *the_int_to_string1(int numbrX)
 
 /**
  * the_digits1- digi
- * @y: digita
+ * @k: digita
  * Return: boolings
  */
-int the_digits1(int y)
+int the_digits1(int k)
 {
-	if (y >= '0' && y <= '9')
+	if (k >= '0' && k <= '9')
 		return (1);
 	else
 		return (0);

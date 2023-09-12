@@ -2,15 +2,15 @@
 
 /**
  * the_cd_comend1 - han cd comand
- * @wordArrat: to ar of word
+ * @array_of_wordst: to ar of word
  * Return: voids.
 */
 
-void the_cd_comend1(char **wordArrat)
+void the_cd_comend1(char **array_of_wordst)
 {
 	char *drctI = NULL, *pwdO, *pwdC;
 
-	drctI = the_getdir1(wordArrat[1]);
+	drctI = the_getdir1(array_of_wordst[1]);
 	if (drctI == NULL)
 	{
 		the_error1("the directory is not found");
