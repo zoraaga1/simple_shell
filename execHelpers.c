@@ -2,14 +2,14 @@
 
 /**
  * exe_cmd_withexecve1 - the function command
- * @cmd: the execute command
- * @arr_of_words: array commands.
+ * @cmod: the execute command
+ * @arrayy_ofword: array commands.
  * Return: void return
 */
 
-void exe_cmd_withexecve1(char *cmd, char **arr_of_words)
+void exe_cmd_withexecve1(char *cmod, char **arrayy_ofword)
 {
-	if (execve(cmd, arr_of_words, NULL) == -1)
+	if (execve(cmod, arrayy_ofword, NULL) == -1)
 	{
 		perror("Error executing command");
 		return;

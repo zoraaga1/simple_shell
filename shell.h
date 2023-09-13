@@ -30,7 +30,7 @@ char *copy_get1();
 
 int _execute_fork1(char **array_cmd_args, char *input_ofusr,char *name_ofshell, int counter_ofcmd, int n);
 char *my_path1(const char *cmd_name);
-void exe_cmd_withexecve1(char *cmd, char **arr_of_words);
+void exe_cmd_withexecve1(char *cmod, char **arrayy_ofword);
 void wait_kid_proce1(pid_t child_p_id, int *Exit_status);
 void _execute_bn1(char **array_cmd_args);
 
