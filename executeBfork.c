@@ -35,8 +35,7 @@ void _execute_bn1(char **array_cmd_args)
  * @n: integer variables
  * @input_ofusr: variable
  * Return: code errors
- * this is a tkharbi9a 
-*/
+ */
 
 int _execute_fork1(char **array_cmd_args, char *input_ofusr,
 char *name_ofshell, int counter_ofcmd, int n)
