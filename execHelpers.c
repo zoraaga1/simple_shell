@@ -19,9 +19,9 @@ void exe_cmd_withexecve1(char *cmod, char **arrayy_ofword)
 
 /**
  * wait_kid_proce1 - wait child  to end of the process
- * @child_p_id: the process 
+ * @child_p_id: the process
  * @Exit_status: Exit_status of the process
- * Return: void return 
+ * Return: void return
 */
 
 void wait_kid_proce1(pid_t child_p_id, int *Exit_status)

@@ -2,7 +2,7 @@
 
 /**
  * the_read_input1  - read the inputs
- * @input_ch: to read 
+ * @input_ch: to read
  * Return: 1 if read else 0
 */
 
@@ -59,7 +59,8 @@ void *the_re_allocation1(void *old_memo_ptr, size_t new_memo_size)
  * @curr_pos: cur posi of bfers
  * Return: voids
 */
-void the_buf_upto1(char **buf_, size_t *ptr_of_buff, char *new_bufdata, size_t curr_pos)
+void the_buf_upto1(char **buf_, size_t *ptr_of_buff,
+char *new_bufdata, size_t curr_pos)
 {
 	if (*buf_ == NULL || *ptr_of_buff < curr_pos)
 	{

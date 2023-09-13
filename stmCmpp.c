@@ -7,7 +7,8 @@
  *
  * Return: conditionaly first_String or second_String.
  */
-int cmp_str1(const char *first_String, const char *second_String, size_t n_of_max_length)
+int cmp_str1(const char *first_String,
+const char *second_String, size_t n_of_max_length)
 {
 	size_t idding = 0;
 

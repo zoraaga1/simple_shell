@@ -10,7 +10,9 @@ int _atoy1(const char *string_convert)
 {
 	int annex = 0, signal = 1;
 
-	while (*string_convert == ' ' || *string_convert == '\t' || *string_convert == '\n')
+	while (*string_convert == ' '
+	|| *string_convert == '\t'
+	|| *string_convert == '\n')
 		string_convert++;
 
 	if (*string_convert == '-')

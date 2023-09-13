@@ -52,7 +52,8 @@ char *name_ofshell, int counter_ofcmd, int n)
 			_execute_bn1(array_cmd_args);
 			return (0);
 		}
-		if (the_handle_cmd1(array_cmd_args, input_ofusr, name_ofshell, counter_ofcmd, n) == 1)
+		if (the_handle_cmd1(array_cmd_args, input_ofusr,
+		name_ofshell, counter_ofcmd, n) == 1)
 			return (0);
 		cXmd = my_path1(commanding);
 		if (!cXmd)

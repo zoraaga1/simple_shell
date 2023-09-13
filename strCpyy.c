@@ -2,15 +2,9 @@
 
 /**
  * copy_str1 - resoursing
-<<<<<<< Updated upstream
- * @dss: array of characters
- * @sourssing: chracter[0]
- * Return: coping the command
-=======
- * @str_dest: array of character
+ * @str_dest: array of characters
  * @str_source: chracter[0]
- * Return: coping
->>>>>>> Stashed changes
+ * Return: coping the command
 */
 
 char *copy_str1(char *str_dest, const char *str_source)

@@ -3,7 +3,7 @@
 /**
  *  lenstr_1 - handle strringx lengs
  * @inpt_string: the strring.
- * Return: leng. 
+ * Return: leng.
 */
 
 size_t lenstr_1(const char *inpt_string)

@@ -9,7 +9,9 @@
  * @err_counter: counting the variables.
  * Return: void return.
 */
-void the_print_errors(char *err_counter, char *name_ofprogram, char *cmd_named, char *err_msgouput)
+void the_print_errors(char *err_counter,
+char *name_ofprogram,
+char *cmd_named, char *err_msgouput)
 {
 	write(STDERR_FILENO, name_ofprogram, lenstr_1(name_ofprogram));
 	if (cmd_named != NULL)
