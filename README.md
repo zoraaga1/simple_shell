@@ -1,4 +1,4 @@
-# $${\color{red}-SIMPLE_SHELL-}$$
+# $${\color{red}-SIMPLE.SHELL-}$$
 
 <img alt="Coder GIF" height=250 width=350 src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 <br>
