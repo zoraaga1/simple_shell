@@ -9,6 +9,8 @@ In alignment with our educational journey, this project aims to enhance our unde
 Our shell is intended to be simple and comprehensible while offering essential features that facilitate command execution, scripting, and navigation.
 Using the Simple Shell is similar to traditional Unix shells. You can execute commands, navigate directories, and utilize various utilities.
 
+<h4> Supported Commands </h4>
+
 | Command           | Description                                     |
 | ----------------- | ----------------------------------------------- |
 | `ls`              | List files and directories in the current directory. |
