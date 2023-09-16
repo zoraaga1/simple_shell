@@ -8,22 +8,22 @@
  */
 char *input_read1()
 {
-	char *holdI = NULL;
-	size_t allocingS = 0;
-	ssize_t readinfT;
+	char *p_tr = NULL;
+	size_t mem_alloc = 0;
+	ssize_t func_read;
 
 	fflush(stdout);
-	readinfT = getline(&holdI, &allocingS, stdin);
+	func_read = getline(&p_tr, &mem_alloc, stdin);
 
-	if (readinfT == -1)
+	if (func_read == -1)
 	{
-		free(holdI);
+		free(p_tr);
 		return (NULL);
 	}
-	if (readinfT > 0 && holdI[readinfT - 1] == '\n')
+	if (func_read > 0 && p_tr[func_read - 1] == '\n')
 	{
-		holdI[readinfT - 1] = '\0';
+		p_tr[func_read - 1] = '\0';
 	}
-	return (holdI);
+	return (p_tr);
 }
 

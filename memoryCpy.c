@@ -10,14 +10,14 @@
 void *the_memry_copy1(void *dest_ptr, const void *res_ptr,
 size_t n_bytes)
 {
-	unsigned char *dss = dest_ptr;
-	const unsigned char *crr = res_ptr;
-	size_t idd;
+	unsigned char *ptr = dest_ptr;
+	const unsigned char *ptr1 = res_ptr;
+	size_t p_id;
 
-	while (idd < n_bytes)
+	while (p_id < n_bytes)
 	{
-		dss[idd] = crr[idd];
-		idd++;
+		ptr[p_id] = ptr1[p_id];
+		p_id++;
 	}
 	return (dest_ptr);
 }

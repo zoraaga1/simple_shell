@@ -8,39 +8,39 @@
 
 char *my_path1(const char *cmd_name)
 {
-	char *conping, *drr, *tkn;
+	char *pt, *direc, *tknzr;
 
-	conping = copy_get1();
-	if (!conping)
+	pt = copy_get1();
+	if (!pt)
 		return (NULL);
 
-	drr = NULL;
-	tkn = strtok(conping, ":");
+	direc = NULL;
+	tknzr = strtok(pt, ":");
 
-	while (tkn != NULL)
+	while (tknzr != NULL)
 	{
-		drr = _direct_pat(tkn, cmd_name);
-		if (!drr)
+		direc = _direct_pat(tknzr, cmd_name);
+		if (!direc)
 			break;
 
-		if (file_exit1(drr) == 1)
+		if (file_exit1(direc) == 1)
 		{
-			free(conping);
-			return (drr);
+			free(pt);
+			return (direc);
 		}
 		else
 		{
-			free(drr);
-			drr = NULL;
-			tkn = strtok(NULL, ":");
+			free(direc);
+			direc = NULL;
+			tknzr = strtok(NULL, ":");
 		}
 	}
 
-	free(conping);
+	free(pt);
 
 	if (file_exit1(cmd_name) == 1)
 		return ((char *) cmd_name);
 
-	return (drr);
+	return (direc);
 }
 

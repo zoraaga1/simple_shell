@@ -7,16 +7,16 @@
  */
 char *copy_get1()
 {
-	char *ptt = getenv("PATH");
-	char *coping;
+	char *ptr_ = getenv("PATH");
+	char *str_copy;
 
-	if (!ptt)
+	if (!ptr_)
 		return (NULL);
 
-	coping = _dup_str1(ptt);
-	if (!coping)
+	str_copy = _dup_str1(ptr_);
+	if (!str_copy)
 		return (NULL);
 
-	return (coping);
+	return (str_copy);
 }
 

@@ -9,13 +9,13 @@
 
 char *copy_str1(char *str_dest, const char *str_source)
 {
-	char *pointt = str_dest;
+	char *Str_copy = str_dest;
 
 	while (*str_source != '\0')
 	{
-		*pointt++ = *str_source++;
+		*Str_copy++ = *str_source++;
 	}
-	*pointt = '\0';
+	*Str_copy = '\0';
 	return (str_dest);
 }
 

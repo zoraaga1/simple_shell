@@ -39,14 +39,14 @@ void wait_kid_proce1(pid_t child_p_id, int *Exit_status)
 */
 int the_valid_word1(char *str_tobechecked)
 {
-int n = 0;
+	int k = 0;
 
-while (str_tobechecked[n] != '\0')
-{
-if (!isalnum(str_tobechecked[n]) && str_tobechecked[n] != '-' &&
-str_tobechecked[n] != '_' && str_tobechecked[n] != '.')
-return (0);
-n++;
-}
+	while (str_tobechecked[k] != '\0')
+	{
+		if (!isalnum(str_tobechecked[k]) && str_tobechecked[k] != '-' &&
+			str_tobechecked[k] != '_' && str_tobechecked[k] != '.')
+		return (0);
+		k++;
+	}
 return (1);
 }

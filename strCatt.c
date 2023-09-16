@@ -9,9 +9,9 @@
 
 char *cat_string1(char *dest_string, const char *source_string)
 {
-	size_t lenthing = lenstr_1(dest_string);
+	size_t S_ptr = lenstr_1(dest_string);
 
-	copy_str1(dest_string + lenthing, source_string);
+	copy_str1(dest_string + S_ptr, source_string);
 
 	return (dest_string);
 }

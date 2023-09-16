@@ -7,12 +7,12 @@
 
 void the_hand_env1(void)
 {
-	char **nv = environ;
+	char **env_var = environ;
 
-	while (*nv)
+	while (*env_var)
 	{
-		printf("%s\n", *nv);
-		nv++;
+		printf("%s\n", *env_var);
+		env_var++;
 	}
 }
 

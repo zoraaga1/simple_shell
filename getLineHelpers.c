@@ -8,11 +8,11 @@
 
 int the_read_input1(char *input_ch)
 {
-	ssize_t strr = read(STDIN_FILENO, input_ch, 1);
+	ssize_t str_n = read(STDIN_FILENO, input_ch, 1);
 
-	if (strr == -1)
+	if (str_n == -1)
 		return (0);
-	if (strr == 0)
+	if (str_n == 0)
 	{
 		if (input_ch != NULL)
 			input_ch[0] = '\0';
@@ -30,7 +30,7 @@ int the_read_input1(char *input_ch)
 
 void *the_re_allocation1(void *old_memo_ptr, size_t new_memo_size)
 {
-	void *pointer;
+	void *ptrs;
 
 	if (new_memo_size == 0)
 	{
@@ -38,17 +38,17 @@ void *the_re_allocation1(void *old_memo_ptr, size_t new_memo_size)
 		return (NULL);
 	}
 
-	pointer = malloc(new_memo_size);
-	if (pointer == NULL)
+	ptrs = malloc(new_memo_size);
+	if (ptrs == NULL)
 	return (NULL);
 
 	if (old_memo_ptr != NULL)
 	{
-		the_memry_copy1(pointer, old_memo_ptr, new_memo_size);
+		the_memry_copy1(ptrs, old_memo_ptr, new_memo_size);
 		free(old_memo_ptr);
 	}
 
-	return (pointer);
+	return (ptrs);
 }
 
 /**

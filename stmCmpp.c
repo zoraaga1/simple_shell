@@ -10,15 +10,15 @@
 int cmp_str1(const char *first_String,
 const char *second_String, size_t n_of_max_length)
 {
-	size_t idding = 0;
+	size_t i = 0;
 
-	while (idding < n_of_max_length)
+	while (i < n_of_max_length)
 	{
-		if (first_String[idding] != second_String[idding])
-			return ((first_String[idding] < second_String[idding]) ? -1 : 1);
-		else if (first_String[idding] == '\0')
+		if (first_String[i] != second_String[i])
+			return ((first_String[i] < second_String[i]) ? -1 : 1);
+		else if (first_String[i] == '\0')
 			return (0);
-		idding++;
+		i++;
 	}
 	return (0);
 }

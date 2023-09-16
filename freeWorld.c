@@ -10,16 +10,16 @@
 
 void free_word1(char **arr_ofwords, int n_ofwords)
 {
-	int x;
+	int wrd;
 
 	if (arr_ofwords == NULL)
 		return;
-	for (x = 0; x < n_ofwords; x++)
+	for (wrd = 0; wrd < n_ofwords; wrd++)
 	{
-		if (arr_ofwords[x] != NULL)
+		if (arr_ofwords[wrd] != NULL)
 		{
-			free(arr_ofwords[x]);
-			arr_ofwords[x] = NULL;
+			free(arr_ofwords[wrd]);
+			arr_ofwords[wrd] = NULL;
 		}
 	}
 	free(arr_ofwords);

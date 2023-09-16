@@ -10,7 +10,7 @@
 int the_env_set1(const char *name_ofenv, const char *new_val,
 			int env_flag)
 {
-	int donee;
+	int set_env;
 
 	if (!name_ofenv || name_ofenv[0] == '\0')
 	{
@@ -21,11 +21,11 @@ int the_env_set1(const char *name_ofenv, const char *new_val,
 	if (!new_val)
 		new_val = "";
 
-	donee = setenv(name_ofenv, new_val, env_flag);
+	set_env = setenv(name_ofenv, new_val, env_flag);
 
-	if (donee < 0)
+	if (set_env < 0)
 		perror("setenv: failed to set env\n");
 
-	return (donee);
+	return (set_env);
 }
 

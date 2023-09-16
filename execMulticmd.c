@@ -9,42 +9,42 @@
  */
 int the_exe_cmd1(char *input_strcmd, char *name_ofprogram, int _counter)
 {
-	int cmdNumber, wordsNumber, i, exitCodding;
-	char **cmdArray, **wordArray;
+	int n_cmd, n_word, i, exit_cmd;
+	char **cmd_arrs, **wrd_arrs;
 
-	cmdArray = split_str1(input_strcmd, ";", &cmdNumber);
-	if (cmdArray == NULL)
+	cmd_arrs = split_str1(input_strcmd, ";", &n_cmd);
+	if (cmd_arrs == NULL)
 	{
 		printf("Error splitting user input\n");
 		return (errno);
 	}
 
-	for (i = 0; i < cmdNumber; i++)
+	for (i = 0; i < n_cmd; i++)
 	{
-		wordArray = split_str1(cmdArray[i], " \t\r\n", &wordsNumber);
-		if (wordArray == NULL)
+		wrd_arrs = split_str1(cmd_arrs[i], " \t\r\n", &n_word);
+		if (wrd_arrs == NULL)
 		{
 			perror("Error splitting command string\n");
 			continue;
 		}
-		if (wordsNumber == 0)
+		if (n_word == 0)
 		{
-			free_word1(cmdArray, cmdNumber);
-			free_word1(wordArray, cmdNumber);
+			free_word1(cmd_arrs, n_cmd);
+			free_word1(wrd_arrs, n_cmd);
 			return (0);
 		}
-		if (the_cmp_str11(wordArray[0], "exit") == 0)
+		if (the_cmp_str11(wrd_arrs[0], "exit") == 0)
 		{
-			free_word1(cmdArray, cmdNumber);
-			the_handle_exits1(wordArray, input_strcmd,
-			name_ofprogram, _counter, wordsNumber);
+			free_word1(cmd_arrs, n_cmd);
+			the_handle_exits1(wrd_arrs, input_strcmd,
+			name_ofprogram, _counter, n_word);
 		}
-		exitCodding = _execute_fork1(wordArray, input_strcmd, name_ofprogram,
-		_counter, wordsNumber);
-		free_word1(wordArray, wordsNumber);
+		exit_cmd = _execute_fork1(wrd_arrs, input_strcmd, name_ofprogram,
+		_counter, n_word);
+		free_word1(wrd_arrs, n_word);
 	}
 
-	free_word1(cmdArray, cmdNumber);
-	return (exitCodding);
+	free_word1(cmd_arrs, n_cmd);
+	return (exit_cmd);
 }
 

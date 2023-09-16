@@ -34,15 +34,15 @@ char *cmd_named, char *err_msgouput)
 */
 void the_exer1(char **array_ofstr, int contr, char *shell)
 {
-	char *err_code = the_int_to_string1(contr);
+	char *error_msg = the_int_to_string1(contr);
 
 	write(STDOUT_FILENO, shell, lenstr_1(shell));
 	write(STDOUT_FILENO, ": ", 2);
-	write(STDOUT_FILENO, err_code, lenstr_1(err_code));
+	write(STDOUT_FILENO, error_msg, lenstr_1(error_msg));
 	write(STDOUT_FILENO, ": ", 2);
 	write(STDOUT_FILENO, array_ofstr[0], lenstr_1(array_ofstr[0]));
 	write(STDOUT_FILENO, ": Illegal number: ", 19);
 	write(STDOUT_FILENO, array_ofstr[1], lenstr_1(array_ofstr[1]));
 	write(STDOUT_FILENO, "\n", 2);
-	free(err_code);
+	free(error_msg);
 }

@@ -10,45 +10,45 @@
 
 char **split_str1(char *inputed_string, const char *_delim, int *word_counter)
 {
-	char *copping = NULL, *wrdX = NULL, **wArray;
+	char *str_cpy = NULL, *ch_ptr = NULL, **ch_arrays;
 	int i;
 
-	copping = malloc(sizeof(char) * lenstr_1(inputed_string) + 1);
-	if (copping == NULL)
+	str_cpy = malloc(sizeof(char) * lenstr_1(inputed_string) + 1);
+	if (str_cpy == NULL)
 	{
 		perror("Allocation Failed !");
 		return (NULL);
 	}
-	copy_str1(copping, inputed_string);
+	copy_str1(str_cpy, inputed_string);
 
 	*word_counter = 0;
-	wrdX = strtok(inputed_string, _delim);
-	while (wrdX != NULL)
+	ch_ptr = strtok(inputed_string, _delim);
+	while (ch_ptr != NULL)
 	{
 		(*word_counter)++;
-		wrdX = strtok(NULL, _delim);
+		ch_ptr = strtok(NULL, _delim);
 	}
-	wArray = malloc(sizeof(char *) * (*word_counter + 1));
-	if (wArray == NULL)
+	ch_arrays = malloc(sizeof(char *) * (*word_counter + 1));
+	if (ch_arrays == NULL)
 	{
 		perror("Allocation Failed !");
 		return (NULL);
 	}
-	wrdX = strtok(copping, _delim);
-	for (i = 0; wrdX != NULL; i++)
+	ch_ptr = strtok(str_cpy, _delim);
+	for (i = 0; ch_ptr != NULL; i++)
 	{
-		wArray[i] = malloc(sizeof(char) * lenstr_1(wrdX) + 1);
-		if (wArray[i] == NULL)
+		ch_arrays[i] = malloc(sizeof(char) * lenstr_1(ch_ptr) + 1);
+		if (ch_arrays[i] == NULL)
 		{
 			perror("Allocation Failed !");
 			return (NULL);
 		}
-		copy_str1(wArray[i], wrdX);
-		wrdX = strtok(NULL, _delim);
+		copy_str1(ch_arrays[i], ch_ptr);
+		ch_ptr = strtok(NULL, _delim);
 	}
 
-	wArray[i] = NULL;
-	free(copping);
-	return (wArray);
+	ch_arrays[i] = NULL;
+	free(str_cpy);
+	return (ch_arrays);
 }
 

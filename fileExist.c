@@ -7,9 +7,9 @@
  */
 int file_exit1(const char *path_of_file)
 {
-	struct stat bfr;
+	struct stat buf_r;
 
-	if (stat(path_of_file, &bfr) != 0)
+	if (stat(path_of_file, &buf_r) != 0)
 		return (0);
 	return (1);
 }

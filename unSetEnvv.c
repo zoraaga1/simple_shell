@@ -7,7 +7,7 @@
  */
 int the_unsetenvs1(const char *name_ofenvire)
 {
-	int final_result;
+	int un_var;
 
 	if (!name_ofenvire || name_ofenvire[0] == '\0')
 	{
@@ -15,11 +15,11 @@ int the_unsetenvs1(const char *name_ofenvire)
 		return (-1);
 	}
 
-	final_result = unsetenv(name_ofenvire);
+	un_var = unsetenv(name_ofenvire);
 
-	if (final_result < 0)
+	if (un_var < 0)
 		perror("unsetenv: failed to unset env\n");
 
-	return (final_result);
+	return (un_var);
 }
 

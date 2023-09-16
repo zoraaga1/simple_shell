@@ -10,14 +10,14 @@
 
 char *the_env_vars1(const char *env_ofchars, char **ptr_toenvire)
 {
-	char **envPointer;
+	char **ptr_env;
 
-	for (envPointer = ptr_toenvire; *envPointer != NULL; envPointer++)
+	for (ptr_env = ptr_toenvire; *ptr_env != NULL; ptr_env++)
 	{
-		if (strncmp(env_ofchars, *envPointer, lenstr_1(env_ofchars)) == 0
-				&& (*envPointer)[lenstr_1(env_ofchars)] == '=')
+		if (strncmp(env_ofchars, *ptr_env, lenstr_1(env_ofchars)) == 0
+				&& (*ptr_env)[lenstr_1(env_ofchars)] == '=')
 		{
-			return (*envPointer + lenstr_1(env_ofchars) + 1);
+			return (*ptr_env + lenstr_1(env_ofchars) + 1);
 		}
 	}
 	return (NULL);
@@ -55,12 +55,12 @@ char *the_getdir1(const char *path_ofdirec)
  */
 char *the_handle_cwd1()
 {
-	char *cwdPoiter;
+	char *ptrs;
 
-	cwdPoiter = getcwd(NULL, 0);
-	if (cwdPoiter == NULL)
+	ptrs = getcwd(NULL, 0);
+	if (ptrs == NULL)
 		perror("cd");
-	return (cwdPoiter);
+	return (ptrs);
 }
 
 /**

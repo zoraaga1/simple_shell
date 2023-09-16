@@ -8,13 +8,13 @@
 
 size_t lenstr_1(const char *inpt_string)
 {
-	size_t annex = 0;
+	size_t ann = 0;
 
 	while (*inpt_string != '\0')
 	{
-		annex++;
+		ann++;
 		inpt_string++;
 	}
-	return (annex);
+	return (ann);
 }
 

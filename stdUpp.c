@@ -7,16 +7,16 @@
  */
 char *_dup_str1(const char *Strings)
 {
-	size_t lenthing = lenstr_1(Strings), i;
-	char *deepping = malloc(lenthing + 1);
+	size_t str_len = lenstr_1(Strings), i;
+	char *ptr = malloc(str_len + 1);
 
-	if (deepping)
+	if (ptr)
 	{
-		for (i = 0; i < lenthing; i++)
-			deepping[i] = Strings[i];
-		deepping[lenthing] = '\0';
+		for (i = 0; i < str_len; i++)
+			ptr[i] = Strings[i];
+		ptr[str_len] = '\0';
 	}
 
-	return (deepping);
+	return (ptr);
 }
 

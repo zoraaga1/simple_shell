@@ -7,46 +7,46 @@
  */
 char *the_int_to_string1(int n_ofInt)
 {
-	int zeroLess = 0, digging = 0, tmppng, i = 0, j = 0;
-	char *strringg;
+	int base = 0, dgt = 0, n_int, i = 0, j = 0;
+	char *_strng;
 
 	if (n_ofInt < 0)
 	{
-		zeroLess = 1;
+		base = 1;
 		n_ofInt *= -1;
-		digging++;
+		dgt++;
 	}
-	tmppng = n_ofInt;
-	while (tmppng > 0)
+	n_int = n_ofInt;
+	while (n_int > 0)
 	{
-		digging++;
-		tmppng /= 10;
+		dgt++;
+		n_int /= 10;
 	}
-	strringg = (char *) malloc(sizeof(char) * (digging + 1));
+	_strng = (char *) malloc(sizeof(char) * (dgt + 1));
 	do {
-		strringg[i++] = (n_ofInt % 10) + '0';
+		_strng[i++] = (n_ofInt % 10) + '0';
 		n_ofInt /= 10;
 	} while (n_ofInt);
 
-	if (zeroLess)
+	if (base)
 	{
-		strringg[i++] = '-';
+		_strng[i++] = '-';
 	}
 
 	j = i - 1;
 	i = 0;
 	while (i < j)
 	{
-		char tmp = strringg[i];
+		char tmp = _strng[i];
 
-		strringg[i] = strringg[j];
-		strringg[j] = tmp;
+		_strng[i] = _strng[j];
+		_strng[j] = tmp;
 		i++;
 		j--;
 	}
 
-	strringg[digging] = '\0';
-	return (strringg);
+	_strng[dgt] = '\0';
+	return (_strng);
 }
 
 /**

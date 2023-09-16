@@ -12,7 +12,7 @@
 void the_handle_exits1(char **wordArray, char *uInput,
 char *shellN, int contre, int nX)
 {
-	int exitTT, i = 0;
+	int ex_, i = 0;
 
 	if (wordArray[1] == NULL)
 	{
@@ -30,10 +30,10 @@ char *shellN, int contre, int nX)
 		}
 		else
 		{
-			exitTT = _atoy1(wordArray[1]);
+			ex_ = _atoy1(wordArray[1]);
 			free(uInput);
 			free_word1(wordArray, nX);
-			exit(exitTT);
+			exit(ex_);
 		}
 	}
 
